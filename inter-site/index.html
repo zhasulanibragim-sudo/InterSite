@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inter Milan Fan Site — Home</title>
+  <meta name="description" content="Unofficial fan site for FC Internazionale Milano: the club, fixtures, history and fan store.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><span class="brand-mark"></span> Inter Milano</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="matches.html">Matches</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="store.html">Store</a></li>
+    </ul>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">FC Internazionale Milano · Since 1908</p>
+      <h1>Black &amp; Blue <span>Forever</span></h1>
+      <p class="lead">Milan's Beneamata — 21 Scudetti, three European Cups and a story that began with one bold idea: football without borders.</p>
+      <div class="hero-actions">
+        <a href="matches.html" class="btn">Next matches</a>
+        <a href="store.html" class="btn ghost">Shop the kits</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="container">
+    <div class="stats">
+      <div class="stat"><b data-count="21">0</b><span>Serie A titles</span></div>
+      <div class="stat"><b data-count="3">0</b><span>European Cups</span></div>
+      <div class="stat"><b data-count="3">0</b><span>UEFA Cups</span></div>
+      <div class="stat"><b data-count="1908">1908</b><span>Founded</span></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">About the club</p>
+        <h2>More than a team</h2>
+        <p class="lead" style="margin-top:12px">Inter were founded on 9 March 1908 in Milan by a group who wanted a club open to players of every nationality — which is exactly where the name <em>Internazionale</em> comes from.</p>
+      </div>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>The Colours</h3>
+          <p>Black and blue — <em>Nerazzurri</em>. The colours are said to evoke the night sky over Milan, with stripes that are recognised around the world.</p>
+        </div>
+        <div class="card">
+          <h3>San Siro</h3>
+          <p>Officially the Stadio Giuseppe Meazza, Inter's home is shared with city rivals AC Milan and is one of the most famous stadiums in football.</p>
+        </div>
+        <div class="card">
+          <h3>Nicknames</h3>
+          <p><em>Nerazzurri</em>, <em>La Beneamata</em> ("the beloved") and <em>Il Biscione</em> ("the big serpent"). Every Interista has a favourite.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT MATCH -->
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Match day</p>
+        <h2>Next up</h2>
+      </div>
+      <div class="next-match" id="nextMatch"></div>
+      <p style="margin-top:20px"><a href="matches.html" class="btn ghost small">Full fixture list →</a></p>
+    </div>
+  </section>
+
+  <!-- STORE TEASER -->
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Fan store</p>
+        <h2>Wear the stripes</h2>
+      </div>
+      <div class="grid cols-3" id="featuredKits"></div>
+      <p style="margin-top:26px"><a href="store.html" class="btn">Visit the store</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>© <span data-year></span> Inter Milano fan project</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="matches.html">Matches</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="store.html">Store</a></li>
+      </ul>
+    </div>
+    <p class="disclaimer">Unofficial fan-made website. Not affiliated with, endorsed by or connected to FC Internazionale Milano S.p.A. All club names belong to their respective owners.</p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

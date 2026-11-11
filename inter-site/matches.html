@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inter Milan Fan Site — Matches</title>
+  <meta name="description" content="Inter Serie A 2026/27 fixtures and results.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><span class="brand-mark"></span> Inter Milano</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="matches.html" class="active">Matches</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="store.html">Store</a></li>
+    </ul>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Serie A 2026/27</p>
+      <h1>Matches</h1>
+      <p class="lead">Fixtures from Matchday 6 onwards. Kick-off times are shown in your local time.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="upcoming">Upcoming</button>
+        <button class="chip" data-filter="results">Results</button>
+      </div>
+      <div class="match-list" id="matchList"></div>
+      <p class="note">Fixture dates and times follow Inter's published Serie A 2026/27 calendar and can be moved by the league or broadcasters.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>© <span data-year></span> Inter Milano fan project</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="matches.html">Matches</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="store.html">Store</a></li>
+      </ul>
+    </div>
+    <p class="disclaimer">Unofficial fan-made website. Not affiliated with, endorsed by or connected to FC Internazionale Milano S.p.A. All club names belong to their respective owners.</p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

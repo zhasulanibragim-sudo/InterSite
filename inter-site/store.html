@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inter Milan Fan Site — Store</title>
+  <meta name="description" content="Home, away and third kits — a fan-made demo store.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><span class="brand-mark"></span> Inter Milano</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="matches.html">Matches</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="store.html" class="active">Store</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="cart-btn" id="cartBtn" aria-label="Open basket">Basket <span class="cart-count">0</span></button>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Fan store</p>
+      <h1>Kits &amp; Gear</h1>
+      <p class="lead">Home, away and third kits, plus goalkeeper, training and heritage options. Pick a size and add to your basket.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="grid cols-3" id="kitGrid"></div>
+      <p class="note">Demo store: kit artwork is original concept illustration and prices are placeholders. Checkout is not connected to a payment provider.</p>
+    </div>
+  </section>
+</main>
+
+<!-- Basket drawer -->
+<div class="drawer-bg" id="drawerBg"></div>
+<aside class="drawer" id="drawer" aria-label="Basket">
+  <div class="drawer-head">
+    <h3>Your basket</h3>
+    <button id="drawerClose" aria-label="Close basket">×</button>
+  </div>
+  <div class="drawer-items" id="drawerItems"></div>
+  <div class="drawer-foot">
+    <div class="total"><span>Total</span><span id="cartTotal">€0.00</span></div>
+    <button class="btn" id="checkout">Checkout</button>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>© <span data-year></span> Inter Milano fan project</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="matches.html">Matches</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="store.html">Store</a></li>
+      </ul>
+    </div>
+    <p class="disclaimer">Unofficial fan-made website. Not affiliated with, endorsed by or connected to FC Internazionale Milano S.p.A. All club names belong to their respective owners.</p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
